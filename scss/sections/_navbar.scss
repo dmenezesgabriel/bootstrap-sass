@@ -1,7 +1,9 @@
 @use "../custom" as custom;
+@use "../components/mixins" as mixins;
 
 .menu {
-  background: linear-gradient(to right, rgba(custom.$primary, 0.95), rgba(custom.$secondary, 0.95));
+  @include mixins.gradient;
+
   img {
     width: 2.5rem;
   }

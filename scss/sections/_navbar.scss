@@ -1,0 +1,16 @@
+@use "../custom" as custom;
+
+.menu {
+  background: linear-gradient(to right, rgba(custom.$primary, 0.95), rgba(custom.$secondary, 0.95));
+  img {
+    width: 2.5rem;
+  }
+  li {
+    padding: 0 0.7rem;
+    a {
+      color: custom.$white;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
+}

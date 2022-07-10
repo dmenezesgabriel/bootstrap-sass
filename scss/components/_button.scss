@@ -1,7 +1,9 @@
-@use "../custom" as custom;
+@use "../custom";
 @use "../components/mixins" as mixin;
-
 .btn-rounded {
+  @include custom.media-breakpoint-up(sm) {
+    display: none;
+  }
   position: relative;
   padding: 0.9rem 4.5rem 0.9rem 1.5rem;
   font-weight: 600;

@@ -1,5 +1,5 @@
-@use "../custom" as custom;
-@use "../components/mixins" as mixins;
+@use "../custom";
+@use "../components/mixins";
 
 .menu {
   @include mixins.gradient;

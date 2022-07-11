@@ -13,10 +13,14 @@
   }
 
   &--description {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: block;
     color: custom.$white;
     margin-top: 1.2rem;
     text-transform: none;
+
+    @include custom.media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+    }
   }
 }

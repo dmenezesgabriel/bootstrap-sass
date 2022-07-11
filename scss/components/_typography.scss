@@ -1,16 +1,22 @@
 @use "../custom";
 
 .display-2 {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1rem;
   text-transform: capitalize;
 
   &--intro {
+    font-family: "Poppins", sans-serif;
     display: inline-block;
     font-weight: 700;
+    color: custom.$white;
   }
 
   &--description {
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: block;
+    color: custom.$white;
+    margin-top: 1.2rem;
+    text-transform: none;
   }
 }

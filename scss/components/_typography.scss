@@ -21,6 +21,28 @@
 
     @include custom.media-breakpoint-up(lg) {
       font-size: 1.5rem;
+      display: inline-block;
     }
   }
+}
+
+// HHeading line
+.heading-line::before {
+  content: "";
+  margin: 0 auto;
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  background-color: custom.$primary;
+}
+
+.heading-line::after {
+  content: "";
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 2rem;
+  height: 0.2rem;
+  padding-top: 0.5rem;
+  display: block;
+  background-color: custom.$primary;
 }

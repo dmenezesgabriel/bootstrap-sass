@@ -46,3 +46,12 @@
   display: block;
   background-color: custom.$primary;
 }
+
+.display-3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.border-right {
+  border-right: 0.1rem solid custom.$gray-300;
+  height: 100%;
+}

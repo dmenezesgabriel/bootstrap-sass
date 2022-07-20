@@ -1,0 +1,8 @@
+@use "../custom" as custom;
+@use "../components/mixins" as mixin;
+
+.testimonials {
+  position: relative;
+  padding: 0;
+  @include mixin.gradient;
+}

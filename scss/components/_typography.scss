@@ -74,3 +74,11 @@
   border-right: 0.1rem solid custom.$gray-300;
   height: 100%;
 }
+
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba(custom.$primary, 0.95),
+    rgba(custom.$secondary, 0.95)
+  );
+}

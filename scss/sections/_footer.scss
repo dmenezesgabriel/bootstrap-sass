@@ -1,0 +1,7 @@
+@use "../custom" as custom;
+@use "../components/mixins" as mixins;
+
+.footer {
+  padding-top: 1rem;
+  background-color: custom.$footer;
+}

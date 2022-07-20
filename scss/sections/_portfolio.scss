@@ -15,6 +15,7 @@
   height: 18.5rem;
   overflow: hidden;
   margin-bottom: 1.2rem;
+  //   border-top: 0.5rem solid custom.$purple-light;
 
   img {
     width: 100%;
@@ -27,11 +28,30 @@
     height: 100%;
     position: absolute;
     top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
 
     .caption {
       text-align: center;
-
+      color: custom.$white;
       @include mixin.absoluteCenter;
+
+      h4 {
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+  }
+  &:hover {
+    img {
+      transform: scale(1.5);
+      @include mixin.transitionProperty;
+    }
+    .portfolio-info {
+      opacity: 1;
+      visibility: visible;
+      @include mixin.transitionProperty;
     }
   }
 }
